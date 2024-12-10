@@ -1,3 +1,4 @@
+-- Active: 1731156415042@@127.0.0.1@3306@final_project
 CREATE DATABASE final_project
     DEFAULT CHARACTER SET = 'utf8mb4';
 USE final_project;

@@ -77,58 +77,6 @@ INSERT INTO Pembeli VALUES
 (9, 'UD Maju Bersama', 'majubersama@gmail.com', 'Jl. Gajah Mada 78, Denpasar', '089234567891', 'UD', 9),
 (10, 'Ahmad Sudrajat', 'ahmad@gmail.com', 'Jl. Ijen 45, Malang', '082123456790', 'Individual', 10);
 
--- Insert Stok 
-INSERT INTO Stok VALUES
-(1, 1000, 'Baik', 1, false, 1),
-(2, 750, 'Baik', 2, false, 1),
-(3, 500, 'Baik', 3, true, 2),
-(4, 1200, 'Baik', 4, false, 1),
-(5, 300, 'Baik', 5, false, 1),
-(6, 800, 'Baik', 6, true, 2),
-(7, 600, 'Baik', 7, false, 1),
-(8, 900, 'Baik', 8, false, 1),
-(9, 400, 'Baik', 9, true, 2),
-(10, 1500, 'Baik', 10, false, 1);
-
--- Insert Produk
-INSERT INTO Produk VALUES
-(1, 'Indomie Goreng', 3000, 'Mie instant goreng original', 'Makanan', 85, 1),
-(2, 'Rinso Cair 900ml', 24000, 'Deterjen cair anti noda', 'Pembersih', 900, 2),
-(3, 'So Klin Pewangi 800ml', 15000, 'Pewangi pakaian', 'Pembersih', 800, 3),
-(4, 'Roma Kelapa 250g', 8000, 'Biskuit kelapa', 'Makanan', 250, 4),
-(5, 'Garuda Kacang 250g', 12000, 'Kacang kulit premium', 'Makanan', 250, 5),
-(6, 'Milo 1kg', 85000, 'Susu coklat bubuk', 'Minuman', 1000, 6),
-(7, 'Fullo Pack 240g', 8500, 'Wafer roll coklat', 'Makanan', 240, 7),
-(8, 'Tango 130g', 7000, 'Wafer coklat', 'Makanan', 130, 8),
-(9, 'Sirup ABC 525ml', 18000, 'Sirup rasa melon', 'Minuman', 525, 9),
-(10, 'Biskuit Monde 150g', 15000, 'Butter cookies', 'Makanan', 150, 10);
-
--- Insert Pengiriman
-INSERT INTO Pengiriman VALUES
-(1, 'Jakarta Pusat', '2024-01-01', '2024-01-03', '2024-01-02', 'JNE Express', 4),
-(2, 'Surabaya', '2024-01-02', '2024-01-04', '2024-01-04', 'SiCepat REG', 5),
-(3, 'Bandung', '2024-01-03', '2024-01-05', '2024-01-05', 'J&T Express', 9),
-(4, 'Medan', '2024-01-04', '2024-01-07', NULL, 'ID Express', 4),
-(5, 'Makassar', '2024-01-05', '2024-01-08', NULL, 'Ninja Express', 5),
-(6, 'Semarang', '2024-01-06', '2024-01-08', '2024-01-07', 'AnterAja', 9),
-(7, 'Palembang', '2024-01-07', '2024-01-10', NULL, 'JNE Regular', 4),
-(8, 'Yogyakarta', '2024-01-08', '2024-01-10', '2024-01-09', 'SiCepat HALU', 5),
-(9, 'Denpasar', '2024-01-09', '2024-01-12', NULL, 'Pos Indonesia', 9),
-(10, 'Malang', '2024-01-10', '2024-01-12', '2024-01-11', 'Lion Parcel', 4);
-
--- Insert Pembeli
-INSERT INTO Pembeli VALUES
-(1, 'Toko Sejahtera', 'tokosejahtera@gmail.com', 'Jl. Pasar Baru 45, Jakarta', '081234567891', 'Toko', 1),
-(2, 'CV Maju Jaya', 'majujaya@gmail.com', 'Jl. Raya Darmo 78, Surabaya', '085678901235', 'CV', 2),
-(3, 'Andi Hermawan', 'andi@gmail.com', 'Jl. Asia Afrika 90, Bandung', '087890123457', 'Individual', 3),
-(4, 'UD Berkah', 'berkah@gmail.com', 'Jl. Zainul Arifin 34, Medan', '089012345679', 'UD', 4),
-(5, 'Minimarket Barokah', 'barokah@gmail.com', 'Jl. Pettarani 67, Makassar', '082345678902', 'Toko', 5),
-(6, 'Sri Wahyuni', 'sriwahyuni@gmail.com', 'Jl. Pemuda 89, Semarang', '081345678903', 'Individual', 6),
-(7, 'CV Abadi Jaya', 'abadijaya@gmail.com', 'Jl. Sudirman 123, Palembang', '085234567891', 'CV', 7),
-(8, 'Toko Makmur', 'tokomakmur@gmail.com', 'Jl. Malioboro 56, Yogyakarta', '087123456790', 'Toko', 8),
-(9, 'UD Maju Bersama', 'majubersama@gmail.com', 'Jl. Gajah Mada 78, Denpasar', '089234567891', 'UD', 9),
-(10, 'Ahmad Sudrajat', 'ahmad@gmail.com', 'Jl. Ijen 45, Malang', '082123456790', 'Individual', 10);
-
 -- Insert Penjualan
 INSERT INTO Penjualan VALUES
 (1, 150000, 0, 150000, 'Transfer Bank', 'Lunas', 2, 1),
@@ -193,4 +141,3 @@ INSERT INTO Produk_Restock VALUES
 (8, 8), -- Tango - Restock 8
 (9, 9), -- Sirup ABC - Restock 9
 (10, 10); -- Monde - Restock 10
-
