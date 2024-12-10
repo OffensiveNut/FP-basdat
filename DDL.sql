@@ -125,33 +125,23 @@ FOREIGN KEY Pemasok_Restock_Pemasok (Pemasok_id_pemasok)
     ON UPDATE CASCADE
     ON DELETE CASCADE;
 
--- Reference: Pemasok_Restock_Restock (table: Pemasok_Restock)
-ALTER TABLE Pemasok_Restock ADD CONSTRAINT Pemasok_Restock_Restock 
-FOREIGN KEY Pemasok_Restock_Restock (Restock_id_restock)
-    REFERENCES Restock (id_restock)
-    ON UPDATE CASCADE
-    ON DELETE CASCADE;
-
 -- Reference: Pembeli_Pengiriman (table: Pembeli)
 ALTER TABLE Pembeli ADD CONSTRAINT Pembeli_Pengiriman 
 FOREIGN KEY Pembeli_Pengiriman (Pengiriman_id_pengiriman)
     REFERENCES Pengiriman (id_pengiriman)
-    ON UPDATE CASCADE
-    ON DELETE CASCADE;
+    ON UPDATE CASCADE;
 
 -- Reference: Pengiriman_Pegawai (table: Pengiriman)
 ALTER TABLE Pengiriman ADD CONSTRAINT Pengiriman_Pegawai 
 FOREIGN KEY Pengiriman_Pegawai (Pegawai_id_pegawai)
     REFERENCES Pegawai (id_pegawai)
-    ON UPDATE CASCADE
-    ON DELETE CASCADE;
+    ON UPDATE CASCADE;
 
 -- Reference: Penjualan_Pegawai (table: Penjualan)
 ALTER TABLE Penjualan ADD CONSTRAINT Penjualan_Pegawai 
 FOREIGN KEY Penjualan_Pegawai (Pegawai_id_pegawai)
     REFERENCES Pegawai (id_pegawai)
-    ON UPDATE CASCADE
-    ON DELETE CASCADE;
+    ON UPDATE CASCADE;
 
 -- Reference: Penjualan_Produk_Penjualan (table: Penjualan_Produk)
 ALTER TABLE Penjualan_Produk ADD CONSTRAINT Penjualan_Produk_Penjualan 
@@ -185,21 +175,18 @@ FOREIGN KEY Produk_Restock_Restock (Restock_id_restock)
 ALTER TABLE Produk ADD CONSTRAINT Produk_Stok 
 FOREIGN KEY Produk_Stok (Stok_id_stok)
     REFERENCES Stok (id_stok)
-    ON UPDATE CASCADE
-    ON DELETE CASCADE;
+    ON UPDATE CASCADE;
 
 -- Reference: Restock_Pegawai (table: Restock)
 ALTER TABLE Restock ADD CONSTRAINT Restock_Pegawai 
 FOREIGN KEY Restock_Pegawai (Pegawai_id_pegawai)
     REFERENCES Pegawai (id_pegawai)
-    ON UPDATE CASCADE
-    ON DELETE CASCADE;
+    ON UPDATE CASCADE;
 
 -- Reference: entity_1_Penjualan (table: Penjualan)
 ALTER TABLE Penjualan ADD CONSTRAINT entity_1_Penjualan 
 FOREIGN KEY entity_1_Penjualan (Pembeli_id_pembeli)
     REFERENCES Pembeli (id_pembeli)
-    ON UPDATE CASCADE
-    ON DELETE CASCADE;
+    ON UPDATE CASCADE;
 
 -- End of file.
